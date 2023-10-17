@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="title-container">
+          <h2>Guess My Number!</h2>
+          <p>The number is between 1 - 20</p>
+        </div>
+        <div class="input-container">
+          <input type="number" class="guess" />
+          <button class="btn check">Check!</button>
+        </div>
+        <div class="result-container">
+          <p class="message">Start Guessing...</p>
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </div>
+      </div>
+      <div class="window-container hidden">
+        <div class="text-window win hidden">
+          <p>Congratulations!</p>
+          <p>Your score is <span class="score2">20</span></p>
+          <p>The current highscore is <span class="highscore2">0</span></p>
+        </div>
+        <div class="text-window lose hidden">
+          <p>Sorry you lose!</p>
+          <p>Your score is <span class="score3">20</span></p>
+          <p>The current highscore is <span class="highscore3">0</span></p>
+        </div>
+        <div class="again-container">
+          <button class="btn again">Play again!</button>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background-color: #3282b8;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flexbox;
+  text-align: center;
+  max-width: 20rem;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title-container {
+  margin-bottom: 2rem;
+}
+
+.guess {
+  background: none;
+  border: 2px solid rgb(73, 73, 73);
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 4.5rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  padding: 0.1rem;
+}
+
+.btn {
+  background-color: #3282b8;
+  border: 2px solid #3282b8;
+  border-radius: 5px;
+  color: white;
+  font-family: inherit;
+  height: 2.5rem;
+  width: 7.5rem;
+  padding: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #266894;
+  border: 2px solid #266894;
+}
+
+.result-container {
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.window-container {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 20rem;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid #3282b8;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 10;
+}
+
+.text-window {
+  background-color: rgb(159, 174, 255);
+  padding: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+@media screen and (width < 400px) {
+  .container {
+    width: 10rem;
+  }
+  .input-container {
+    display: flexbox;
+  }
+  .guess {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  .window-container {
+    width: 15rem;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .btn .again {
+    width: 6.5rem;
+  }
+}
